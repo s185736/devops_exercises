@@ -6,9 +6,7 @@ test('renders learn react link', () => {
   const linkElement = screen.getByText(/learn devops/i);
   expect(linkElement).toBeInTheDocument();
   let button = screen.getByRole(/button/);
-  expect(button).toHaveTextContent("Loginmmm");
-  let usernameField = screen.getByLabelText("username");
-  expect(usernameField).toHaveAttribute("placeholder","indtast brugernavn")
+  expect(button).toHaveTextContent("Login");
 });
 
 test('has login button', () => {
